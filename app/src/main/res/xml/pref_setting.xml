@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/setting" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="dice_cheat"
+            android:title="@string/dice_cheat"
+            android:icon="@mipmap/head_woman_1"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="dice_cheat"
+            android:entries="@array/dice_num_options"
+            android:entryValues="@array/dice_num_values"
+            android:key="dice_num"
+            android:title="@string/dice_num"
+            android:icon="@mipmap/head_woman_2"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="mora_cheat"
+            android:title="@string/mora_cheat"
+            android:icon="@mipmap/head_woman_3"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="mora_cheat"
+            android:entries="@array/mora_num_options"
+            android:entryValues="@array/mora_num_values"
+            android:key="mora_num"
+            android:title="@string/mora_num"
+            android:icon="@mipmap/head_woman_4"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:key="author"
+            android:summary="rhyma(qq:1103916434)"
+            android:title="@string/author"
+            android:icon="@mipmap/head_man_1"/>
+        <Preference
+            android:key="soul"
+            android:summary="命里有劫，天煞孤星"
+            android:title="@string/soul"
+            android:icon="@mipmap/head_woman_5"/>
+        <Preference
+            android:key="donate_alipay"
+            android:title="@string/alipay_donate"
+            android:icon="@mipmap/head_woman_6"/>
+        <Preference
+            android:key="donate_wechat"
+            android:title="@string/wechat_donate"
+            android:icon="@mipmap/head_woman_7"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

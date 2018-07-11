@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">EvilSoul</string>
+    <string name="dice_cheat">骰子作弊</string>
+    <string name="dice_num">骰子点数</string>
+    <string name="mora_cheat">猜拳作弊</string>
+    <string name="mora_num">猜拳点数</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="author">作者</string>
+    <string name="soul">soul</string>
+    <string name="wechat_donate">微信捐赠</string>
+    <string name="alipay_donate">支付宝捐赠</string>
+
+    <string-array name="dice_num_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="dice_num_values">
+        <item>dice_1</item>
+        <item>dice_2</item>
+        <item>dice_3</item>
+        <item>dice_4</item>
+        <item>dice_5</item>
+        <item>dice_6</item>
+    </string-array>
+
+    <string-array name="mora_num_options">
+        <item>剪刀</item>
+        <item>石头</item>
+        <item>布</item>
+    </string-array>
+    <string-array name="mora_num_values">
+        <item>finger_scissor</item>
+        <item>finger_stone</item>
+        <item>finger_cloth</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
