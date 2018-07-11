@@ -1,6 +1,7 @@
 package com.xxj.rhyma.evilsoul;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
@@ -21,7 +22,17 @@ public class SettingsFragment extends PreferenceFragment{
         getPreferenceManager().setSharedPreferencesMode(MODE_WORLD_READABLE);
         getPreferenceManager().setSharedPreferencesName("evil");
         addPreferencesFromResource(R.xml.pref_setting);
-
+        Preference author = findPreference("author");
+        author.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent();
+                intent.setAction("android.intent.action.VIEW");
+                intent.setData(Uri.parse("https://github.com/ananas-xxj/EvilSoul/tree/master"));
+                startActivity(intent);
+                return true;
+            }
+        });
         Preference donateAlipay = findPreference("donate_alipay");
         donateAlipay.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override

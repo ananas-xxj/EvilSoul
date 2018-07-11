@@ -16,7 +16,7 @@ android {
         release {
             keyAlias "rhyma"
             keyPassword "xxj121096"
-            storeFile file("evilsoul.jks")
+            storeFile file(project.STORE_FILE)
             storePassword "xxj121096"
         }
     }
